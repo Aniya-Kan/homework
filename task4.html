@@ -15,11 +15,12 @@
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
         </article>
         <script>
-            const paragraphs = document.querySelectorAll("article p");
-            paragraphs.forEach(paragraph => {
+            const paragraph = document.querySelectorAll("article p");
+            for(let i= 0; i<paragraph.length; i++);
             const hr = document.createElement("hr");
-            paragraph.after(hr); 
-            });
+            paragraph[i].after("hr")
+            
         </script>
 </body>
 </html>
+

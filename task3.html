@@ -9,13 +9,15 @@
     <ol id="todo-list"></ol>
     <script>
         const tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
-        const todoList = document.getElementById("todo-list");
-            for (let i = 0; i < tasks.length; i++) {
-                const listItem = document.createElement("li");
-                listItem.className = "task"; 
-                listItem.textContent = tasks[i]; 
-                todoList.appendChild(listItem); 
-            }
+        const toDo = document.getElementById("todo-list");
+       for(let i=0; i<tasks.length;i++){
+        const item = document.createElement("li");
+        item.textContent = tasks[i];
+        toDo.appendChild(item);
+        console.log(item.textContent);
+       }
+
+
     </script>
 </body>
 </html>

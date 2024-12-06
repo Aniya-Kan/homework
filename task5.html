@@ -15,19 +15,22 @@
 </div>
 <script>
     const cartItems = document.getElementById("cart-items");
-        for (let item of cartItems.children) {
-            if (item.textContent.includes("Cola 1.5 l")) {
-                 item.remove();
-            break;
-            }
+    for (let item of cartItems.children) {
+        if (item.textContent.includes("Cola 1.5 l")) {
+         item.remove();
+        break;
         }
+    }
 
-        for (let item of cartItems.children) {
-            if (item.textContent.includes("Chocolate bar")) {
-                item.innerHTML = 'Canned Fish<span class="qty"> x4</span>';
-            break; 
-            }
+    for(let item of cartItems.children){
+        if(item.textContent.includes("Chocolate bar")){
+                item.innerHTML = 'Canned fish <span class = "qty" > x4</span> ' ; 
+            break;
         }
+    }
+
+
+
 </script>
 </body>
 </html>
